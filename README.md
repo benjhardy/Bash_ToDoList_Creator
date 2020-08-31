@@ -8,7 +8,7 @@ add:
 export today=$(date +"%F")
 ```
 
-to .bashrc in your home directory.\n
+to .bashrc in your home directory.
 
 This is useful if you dont want to 'cat' the actual date. i.e.
 
