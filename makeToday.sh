@@ -3,9 +3,11 @@
 ## This Script creates a bullet journal inspired to-do-list
 ## wtf is a bullet Journal, well i read about it after jonbmartin mentioned it,
 ## and I liked the x vs o concept so yeah adapting my to-do-list template 
-## Also have really like the idea of brainDump section of a journal
-
-
+## Also have really liked the idea of brainDump section of a journal
+#
+# Benjamin Hardy 
+# 2020-08-31
+# version 0.0.1
 
 echo -n -e "To-Do-List ---- > 'C' (Create new list) 'A' (Add new goal) 'X' (Mark as done!) 'D' (Delete goal)\n"
 read entry
@@ -62,4 +64,4 @@ esac
 # 2. add to Today
 # 3. delete from Today
 # 4. Cross off stuff from Today
-# 5. 
+# 5. brainDump section!
