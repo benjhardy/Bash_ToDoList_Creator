@@ -4,7 +4,7 @@ To-Do-List Journal. cat the day in the terminal for a minimalist view on your go
 ```bash
 ./makeToday.sh
 ```
-# $today in .bashrc for easy access to To-Do-List
+## hint: add $today in .bashrc for easy access to To-Do-List
 add:
 
 ```bash
