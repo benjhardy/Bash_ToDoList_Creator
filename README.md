@@ -1,6 +1,9 @@
 # Bash TO-DO-LIST Creator!
 To-Do-List Journal. cat the day in the terminal for a minimalist view on your goals for the day.
-
+# To Run go to your favorite shell...
+```bash
+./makeToday.sh
+```
 # $today in .bashrc for easy access to To-Do-List
 add:
 
