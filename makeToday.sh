@@ -9,7 +9,7 @@
 # 2020-08-31
 # version 0.0.1
 
-echo -n -e "To-Do-List ---- > 'C' (Create new list) 'A' (Add new goal) 'X' (Mark as done!) 'D' (Delete goal)\n"
+echo -n -e "To-Do-List ---- > 'C' (Create new list) 'A' (Add new goal) 'X' (Mark as done!) 'D' (Delete goal) 'B' (Brain Dump) \n"
 read entry
 
 case $entry in
@@ -37,8 +37,9 @@ case $entry in
     ;;
     A) # (Add new goal)
         read newGoal
+        # need to put after the last number, find the last number and do the next line...
         echo -e $newGoal >> $today
-
+        cat $today
     ;;
     X) # (Mark as Done!)
         cat $today
@@ -54,6 +55,17 @@ case $entry in
         read goalDel
         echo 'Can not delete goal:'$goalDel' yet, Ben needs to code this still...'
 
+    ;;
+    B)  
+        
+        echo 'What do you need to remember (Brain Dump)?'
+
+        # could use sed or grep to see if BrainDump already exists
+        echo -e '*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_-Brain-Dump-_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_\n' >> $today
+
+        cat $today
+        read brainDump
+        echo -e -n '\n-> '$brainDump'\n' >> $today
     ;;
 
 
